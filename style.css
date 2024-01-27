@@ -1,0 +1,52 @@
+ /* Estilo para todos los párrafos */
+p {
+    font-size: 16px;
+    color: #000000;
+    text-align: center;
+}
+
+em strong {
+    color: rgb(255,0,0);
+}
+
+ul {
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+}
+
+/* ESTILOS ESPECIFICADOS POR SELECTOR DE ID*/
+#mision {
+    font-size: 20px;
+}
+
+#banner {
+    width: 100%;
+}
+
+#diferenciales {
+    width: 50%;
+}
+
+/*ESTILOS ESPECIFICADOS POR SELECTOR DE CLASE*/
+.tituloPrincipal {
+    padding-left: 30px;
+}
+.titulosCentralizados {
+    text-align: center;
+}
+
+.items {
+    font-style: italic;
+}
+
+.diferenciales {
+    background: #FFFFFF;
+    padding: 30px;
+}
+
+.principal {
+    background: #CCCCCC;
+    padding: 20px;
+}
