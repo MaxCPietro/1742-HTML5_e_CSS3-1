@@ -1,7 +1,22 @@
 header {
     background-color: #CCCCCC;
+    border: #000000 1px solid;
+    padding: 20px 0;
 }
 
+.caja {
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+    border: red 1px solid;
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
+    border: green 1px solid;
+}
 nav ul li {
     display: inline;
     margin: 0 0 0 15px;
@@ -13,4 +28,35 @@ nav a {
     font-weight: bold;
     font-size: 22px;
     text-decoration: none;
+}
+
+.productos {
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+    padding: 50px;
+    border: red 1px solid;
+}
+
+.productos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+.productos li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    border: #000000 1px solid;
+    margin: 0 auto;
+}
+
+.productosDescripcion {
+    font-size: 18px;
+}
+
+.productoPrecio {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
 }
