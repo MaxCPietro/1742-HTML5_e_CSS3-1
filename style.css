@@ -9,13 +9,6 @@ em strong {
     color: rgb(255,0,0);
 }
 
-ul {
-    display: inline-block;
-    vertical-align: top;
-    width: 20%;
-    margin-right: 15%;
-}
-
 /* ESTILOS ESPECIFICADOS POR SELECTOR DE ID*/
 #mision {
     font-size: 20px;
@@ -50,4 +43,11 @@ ul {
 .principal {
     background: #CCCCCC;
     padding: 20px;
+}
+
+.itemsIndex {
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
 }

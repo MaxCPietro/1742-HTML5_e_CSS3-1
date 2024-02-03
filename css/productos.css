@@ -5,6 +5,11 @@ header {
     padding: 20px 0;
 }
 
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
 .caja {
     width: 940px;
     position: relative;
@@ -18,7 +23,7 @@ nav {
     right: 0;
     border: green 1px solid;
 }
-nav ul li {
+nav ul li { 
     display: inline;
     margin: 0 0 0 15px;
 }
@@ -47,7 +52,7 @@ footer {
     padding: 40px;
 }
 
-main form {
+main {
     width: 940px;
     margin: 40px auto;
     border: red 1px solid;
@@ -57,7 +62,21 @@ form label, form legend {
     display:block;
     font-size: 20px;
     margin-bottom: 10px;
+}
 
+table {
+    margin: 20px 0;
+}
+
+thead {
+    background-color: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th {
+    border: 1px solid #000000;
+    padding: 8px 15px;
 }
 
 /* CSS para clases HTML */
@@ -93,7 +112,6 @@ form label, form legend {
 
 .productos li:hover h2 {
     font-size: 34px;
-    
 }
 
 .productos li:active {
@@ -111,8 +129,16 @@ form label, form legend {
     margin-top: 10px;
 }
 
-.item {
+.items {
     border: green 1px solid;
+}
+
+.items::before {
+    content: "★ ";
+}
+
+.items::after {
+    content: " ✔";
 }
 
 .copyright {
@@ -152,5 +178,125 @@ form label, form legend {
     transform: rotate(5deg) scale(1.2);
 }
 
-/*Estios CSS para ID*/
+.cartelPrincipal {
+    width: 100%;
+}
 
+.tituloPrincipal {
+    text-align: center;
+    font-size: 2em; 
+    margin: 0 0 1em;
+    clear:left;
+    text-shadow: 2px 2px 10px red;
+}
+
+.tituloPrincipal::first-letter {
+    font-weight: bold;
+}
+
+.principal {
+    background-color: #FEFEFE;
+    padding: 3em;
+    border: black 1px solid;
+}
+
+.principal p {
+    margin: 0 0 1em
+}
+
+.principal strong {
+    font-weight: bold;
+}
+
+.principal em {
+    font-style: italic;
+}
+
+.imgDiferenciales {
+    width: 50%;
+}
+
+.utensilios{
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.mapa {
+    padding: 3em 0;
+    background: linear-gradient(#fefefe, #888888);
+}
+
+.mapa p {
+    margin: 2em 0;
+    text-align: center;
+}
+
+.video {
+    border: #088c19 1px solid;
+    background: linear-gradient(#888888, #000000);
+    padding: 3em 0;
+}
+
+.video iframe {
+    width: 560px;
+    height: 315px;
+}
+
+.contenidoDiferenciales {
+    width: 640px;
+    margin: 0 auto;
+    border: rebeccapurple 1px solid;
+}
+
+.items {
+    line-height: 1.5em;
+}
+
+.items:first-child {
+    font-weight: bold;
+}
+.itemsIndex {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+.imgDiferenciales {
+    width: 50%;
+    box-shadow: 0px 0px 30px 25px green;
+    display: inline-block;
+    box-sizing: border-box;
+    transition: 2s;
+} 
+
+.imgDiferenciales:hover {
+    opacity: 0.3;
+}
+
+.diferenciales {
+    background: #888888;
+    border: #000000 1px solid;
+    padding: 3em 0;
+    box-shadow: inset 10px 30px 30px 15px violet;
+}
+
+/*Estios CSS para ID*/
+/*VACIO*/
+
+/*HACIENDO LA PAGINA RESPONSIVE*/
+@media screen and (max-width:480px){
+    h1{
+        text-align: center;
+    }
+    nav{
+        position: static;
+    }
+    .caja, .principal, .mapa-contenido, .contenido-diferenciales, .video .cartelPrincipal{
+        width: auto;
+    }
+    .lista-diferenciales, .imagen-diferenciales{
+        width: 100%;
+    }
+}
